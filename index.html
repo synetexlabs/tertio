@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Tertio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    /* Premium Ivory Brand Styling */
+    :root {
+      --bg-color: #FFF9F0;      /* Warm paper ivory */
+      --text-main: #231A14;     /* Warm ink */
+      --text-sub: #7A6E62;      /* Warm grey */
+      --coral: #FF9C84;         /* Sunrise Coral */
+      --lavender: #C0AEEE;      /* Dusk Lavender */
+      --sage: #78B7A7;          /* Ocean Sage */
+      --card-bg: rgba(255, 255, 255, 0.65);
+      --card-border: rgba(255, 156, 132, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(255, 210, 197, 0.25) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(229, 218, 250, 0.25) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    /* Header styling matching custom-theming.md */
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo-container {
+      display: inline-block;
+      padding: 12px;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 8px 24px rgba(228, 218, 204, 0.4);
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 156, 132, 0.1);
+    }
+
+    .logo-img {
+      width: 64px;
+      height: 64px;
+      display: block;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+    }
+
+    /* Glassmorphic Cards */
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 10px 32px rgba(35, 26, 20, 0.04);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: linear-gradient(to bottom, var(--coral), var(--lavender));
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 14.5px;
+      color: var(--text-sub);
+      margin-bottom: 16px;
+    }
+
+    p strong {
+      color: var(--text-main);
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 16px;
+    }
+
+    li {
+      font-size: 14px;
+      color: var(--text-sub);
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    li::before {
+      content: "🌸";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      font-size: 11px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px dashed rgba(122, 110, 98, 0.15);
+      font-size: 12px;
+      color: var(--text-sub);
+    }
+
+    a {
+      color: var(--coral);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #e46f59;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <!-- Renders the gorgeous real app icon if available, fallbacks to SVG representation -->
+        <img class="logo-img" src="app_icon.png" onerror="this.style.display='none'; this.nextElementSibling.removeAttribute('style');" alt="Tertio">
+        <svg class="logo-img" style="display:none;" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="128" height="128" rx="28" fill="#FFF9F0"/>
+          <circle cx="64" cy="64" r="36" fill="#FFCBB7" opacity="0.5"/>
+          <path d="M64 28C83.8823 28 100 44.1177 100 64C100 83.8823 83.8823 100 64 100C44.1177 100 28 83.8823 28 64C28 44.1177 44.1177 28 64 28ZM64 42C51.8497 42 42 51.8497 42 64C42 76.1503 51.8497 86 64 86C76.1503 86 86 76.1503 86 64C86 51.8497 76.1503 42 64 42Z" fill="#FF9C84"/>
+          <circle cx="64" cy="64" r="14" fill="#C0AEEE"/>
+        </svg>
+      </div>
+      <h1>Tertio</h1>
+      <div class="subtitle">Privacy Policy</div>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Overview</h2>
+        <p>Your digital boundaries are sacred to us. <strong>Tertio</strong> is designed as a warm, micro-ritualistic sanctuary for a busy world. With a philosophy of <strong>less user interaction</strong> and <strong>only three essential tasks a day</strong>, Tertio helps you keep your inner peace, boost your focus, regain your energy, and stay organized through small, intentional, and quiet steps—all without compromising your personal privacy. We do not engage in data monetization or cross-site tracking.</p>
+        <p>This Privacy Policy explains what information is collected, how it is secured, and what control you maintain over your data.</p>
+      </div>
+
+      <div class="card">
+        <h2>Information We Collect</h2>
+        <p>To deliver a personalized, high-fidelity experience, Tertio processes the following categories of data:</p>
+        <ul>
+          <li><strong>Authentication Data:</strong> If you secure your account using Google Sign-In, we record your email address and primary profile details (provided by Supabase Auth) to establish your secure identity. Anonymous guest users are authenticated using isolated local device identifiers.</li>
+          <li><strong>Wellness Profile Indicators:</strong> Personal parameters configured during onboarding—such as your energy rhythm preference (chronotype), waking/sleeping hours, and wellness intentions—are stored securely on Supabase.</li>
+          <li><strong>Daily Check-Ins & Reflections:</strong> Daily completion metrics, notes, and journaling texts written during your exercises are persisted securely to analyze your progress and allow structural planning.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Data Security & Encryption</h2>
+        <p>We implement a robust, enterprise-grade storage architecture to safeguard your personal details:</p>
+        <ul>
+          <li><strong>Transmission Safety:</strong> All data transferred between the mobile app and our database is strictly encrypted in transit using industry-standard TLS (HTTPS) protocols.</li>
+          <li><strong>Database Encryption:</strong> All persistent data tables are hosted inside secure PostgreSQL instances operated by Supabase, locked behind encrypted credential access.</li>
+          <li><strong>Entitlement Checks:</strong> Feature authorization (such as verifying Pro subscriptions) is conducted securely with dynamic tokens, meaning no credit card numbers or financial details ever touch our systems.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Your Rights & Data Control</h2>
+        <p>We believe in absolute data ownership. In the settings section of Tertio, you can trigger the following actions directly at any time:</p>
+        <ul>
+          <li><strong>Purge Local Cache:</strong> Instantly wipe all locally cached completion metrics, database rows, and writing drafts from your physical device memory.</li>
+          <li><strong>Sign Out:</strong> Instantly end your session, clearing temporary tokens.</li>
+          <li><strong>Delete Account:</strong> Permanently and irrevocably delete your profile, email link, and all history from both the cloud database and your device.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, your digital rights, or need assistance deleting your records, please reach out to us:</p>
+        <p>🌸 Email Support: <a href="mailto:synetexlabs@gmail.com">synetexlabs@gmail.com</a></p>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p>© 2026 Synetex Labs. All rights reserved.</p>
+      <p>Last Updated: May 30, 2026</p>
+    </div>
+  </div>
+</body>
+</html>
