@@ -1,241 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | Tertio</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
-  <style>
-    /* Premium Ivory Brand Styling */
-    :root {
-      --bg-color: #FFF9F0;      /* Warm paper ivory */
-      --text-main: #231A14;     /* Warm ink */
-      --text-sub: #7A6E62;      /* Warm grey */
-      --coral: #FF9C84;         /* Sunrise Coral */
-      --lavender: #C0AEEE;      /* Dusk Lavender */
-      --sage: #78B7A7;          /* Ocean Sage */
-      --card-bg: rgba(255, 255, 255, 0.65);
-      --card-border: rgba(255, 156, 132, 0.2);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      padding: 40px 20px;
-      display: flex;
-      justify-content: center;
-      min-height: 100vh;
-      background-image: 
-        radial-gradient(at 0% 0%, rgba(255, 210, 197, 0.25) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(229, 218, 250, 0.25) 0px, transparent 50%);
-      background-attachment: fixed;
-    }
-
-    .container {
-      max-width: 720px;
-      width: 100%;
-    }
-
-    /* Header styling matching custom-theming.md */
-    header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .logo-container {
-      display: inline-block;
-      padding: 12px;
-      background: #ffffff;
-      border-radius: 24px;
-      box-shadow: 0 8px 24px rgba(228, 218, 204, 0.4);
-      margin-bottom: 16px;
-      border: 1px solid rgba(255, 156, 132, 0.1);
-    }
-
-    .logo-img {
-      width: 64px;
-      height: 64px;
-      display: block;
-      border-radius: 12px;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 13px;
-      color: var(--text-sub);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-weight: 600;
-    }
-
-    /* Glassmorphic Cards */
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--card-border);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: 0 10px 32px rgba(35, 26, 20, 0.04);
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    h2::before {
-      content: "";
-      display: inline-block;
-      width: 4px;
-      height: 18px;
-      background: linear-gradient(to bottom, var(--coral), var(--lavender));
-      border-radius: 2px;
-    }
-
-    p {
-      font-size: 14.5px;
-      color: var(--text-sub);
-      margin-bottom: 16px;
-    }
-
-    p strong {
-      color: var(--text-main);
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin-bottom: 16px;
-    }
-
-    li {
-      font-size: 14px;
-      color: var(--text-sub);
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 8px;
-    }
-
-    li::before {
-      content: "🌸";
-      position: absolute;
-      left: 0;
-      top: 1px;
-      font-size: 11px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px dashed rgba(122, 110, 98, 0.15);
-      font-size: 12px;
-      color: var(--text-sub);
-    }
-
-    a {
-      color: var(--coral);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    a:hover {
-      color: #e46f59;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tertio — AI Co-Pilot for Mind, Body & Spirit</title>
+  <meta name="description" content="Tertio is your warm daily wellness ritual. An AI co-pilot that helps you nurture mind, body, and spirit with personalized plans, guided sessions, and intelligent conversation." />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo-container">
-        <!-- Renders the gorgeous real app icon if available, fallbacks to SVG representation -->
-        <img class="logo-img" src="app_icon.png" onerror="this.style.display='none'; this.nextElementSibling.removeAttribute('style');" alt="Tertio">
-        <svg class="logo-img" style="display:none;" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="128" height="128" rx="28" fill="#FFF9F0"/>
-          <circle cx="64" cy="64" r="36" fill="#FFCBB7" opacity="0.5"/>
-          <path d="M64 28C83.8823 28 100 44.1177 100 64C100 83.8823 83.8823 100 64 100C44.1177 100 28 83.8823 28 64C28 44.1177 44.1177 28 64 28ZM64 42C51.8497 42 42 51.8497 42 64C42 76.1503 51.8497 86 64 86C76.1503 86 86 76.1503 86 64C86 51.8497 76.1503 42 64 42Z" fill="#FF9C84"/>
-          <circle cx="64" cy="64" r="14" fill="#C0AEEE"/>
-        </svg>
-      </div>
-      <h1>Tertio</h1>
-      <div class="subtitle">Privacy Policy</div>
-    </header>
 
-    <main>
-      <div class="card">
-        <h2>Overview</h2>
-        <p>Your digital boundaries are sacred to us. <strong>Tertio</strong> is designed as a warm, micro-ritualistic sanctuary for a busy world. With a philosophy of <strong>less user interaction</strong> and <strong>only three essential tasks a day</strong>, Tertio helps you keep your inner peace, boost your focus, regain your energy, and stay organized through small, intentional, and quiet steps—all without compromising your personal privacy. We do not engage in data monetization or cross-site tracking.</p>
-        <p>This Privacy Policy explains what information is collected, how it is secured, and what control you maintain over your data.</p>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Tertio</span>
+      </a>
+      <div class="nav__links">
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#how-it-works" class="nav__link">How It Works</a>
+        <a href="#waitlist" class="nav__link nav__link--cta">Join Waitlist</a>
       </div>
-
-      <div class="card">
-        <h2>Information We Collect</h2>
-        <p>To deliver a personalized, high-fidelity experience, Tertio processes the following categories of data:</p>
-        <ul>
-          <li><strong>Authentication Data:</strong> If you secure your account using Google Sign-In, we record your email address and primary profile details (provided by Supabase Auth) to establish your secure identity. Anonymous guest users are authenticated using isolated local device identifiers.</li>
-          <li><strong>Wellness Profile Indicators:</strong> Personal parameters configured during onboarding—such as your energy rhythm preference (chronotype), waking/sleeping hours, and wellness intentions—are stored securely on Supabase.</li>
-          <li><strong>Daily Check-Ins & Reflections:</strong> Daily completion metrics, notes, and journaling texts written during your exercises are persisted securely to analyze your progress and allow structural planning.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Data Security & Encryption</h2>
-        <p>We implement a robust, enterprise-grade storage architecture to safeguard your personal details:</p>
-        <ul>
-          <li><strong>Transmission Safety:</strong> All data transferred between the mobile app and our database is strictly encrypted in transit using industry-standard TLS (HTTPS) protocols.</li>
-          <li><strong>Database Encryption:</strong> All persistent data tables are hosted inside secure PostgreSQL instances operated by Supabase, locked behind encrypted credential access.</li>
-          <li><strong>Entitlement Checks:</strong> Feature authorization (such as verifying Pro subscriptions) is conducted securely with dynamic tokens, meaning no credit card numbers or financial details ever touch our systems.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Your Rights & Data Control</h2>
-        <p>We believe in absolute data ownership. In the settings section of Tertio, you can trigger the following actions directly at any time:</p>
-        <ul>
-          <li><strong>Purge Local Cache:</strong> Instantly wipe all locally cached completion metrics, database rows, and writing drafts from your physical device memory.</li>
-          <li><strong>Sign Out:</strong> Instantly end your session, clearing temporary tokens.</li>
-          <li><strong>Delete Account:</strong> Permanently and irrevocably delete your profile, email link, and all history from both the cloud database and your device.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, your digital rights, or need assistance deleting your records, please reach out to us:</p>
-        <p>🌸 Email Support: <a href="mailto:synetexlabs@gmail.com">synetexlabs@gmail.com</a></p>
-      </div>
-    </main>
-
-    <div class="footer">
-      <p>© 2026 Synetex Labs. All rights reserved.</p>
-      <p>Last Updated: May 30, 2026</p>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__bg-shape hero__bg-shape--1"></div>
+    <div class="hero__bg-shape hero__bg-shape--2"></div>
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__badge">Closed Beta — Limited Access</span>
+        <h1 class="hero__title">
+          Your AI Co-Pilot for<br />
+          <span class="hero__title-accent">Mind, Body & Spirit</span>
+        </h1>
+        <p class="hero__subtitle">
+          A warm daily wellness ritual that learns who you are — and helps you
+          become who you want to be. Personalized plans, guided audio sessions,
+          and an AI companion that truly listens.
+        </p>
+        <div class="hero__actions">
+          <a href="#waitlist" class="btn btn--primary">Join the Waitlist</a>
+          <a href="#features" class="btn btn--ghost">Explore Features</a>
+        </div>
+        <div class="hero__stores">
+          <span class="hero__stores-label">Coming soon on</span>
+          <div class="hero__stores-icons">
+            <div class="store-badge store-badge--apple">App Store</div>
+            <div class="store-badge store-badge--google">Google Play</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__phone">
+          <div class="hero__phone-screen">
+            <img
+              src="tertio_banner.png"
+              alt="Tertio app preview"
+              class="hero__banner"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">Nurture Every Part of You</h2>
+        <p class="section-header__subtitle">
+          Three interconnected pillars, one intelligent companion that adapts
+          to your energy, schedule, and growth.
+        </p>
+      </div>
+      <div class="features__grid">
+        <article class="feature-card feature-card--body">
+          <div class="feature-card__icon">🌿</div>
+          <h3 class="feature-card__title">Body</h3>
+          <p class="feature-card__desc">
+            Movement breaks, guided exercises, and wellness tasks timed to
+            your chronotype — because your body knows its own rhythm.
+          </p>
+        </article>
+        <article class="feature-card feature-card--mind">
+          <div class="feature-card__icon">💭</div>
+          <h3 class="feature-card__title">Mind</h3>
+          <p class="feature-card__desc">
+            Mood tracking, AI conversations with your personal coach, and guided
+            reflection that helps you process your day with clarity.
+          </p>
+        </article>
+        <article class="feature-card feature-card--spirit">
+          <div class="feature-card__icon">🕊️</div>
+          <h3 class="feature-card__title">Spirit</h3>
+          <p class="feature-card__desc">
+            Mindfulness practices, breathwork, and values-aligned growth —
+            tailored to your spiritual orientation, whatever that means to you.
+          </p>
+        </article>
+      </div>
+      <div class="features__spotlight">
+        <div class="spotlight-card">
+          <div class="spotlight-card__content">
+            <span class="spotlight-card__tag">AI Companion</span>
+            <h3 class="spotlight-card__title">Meet Tertio, Your Personal Coach</h3>
+            <p class="spotlight-card__desc">
+              Not a chatbot — a companion. Tertio learns your habits, remembers
+              your journey, and speaks with genuine warmth. Voice-guided sessions,
+              intelligent check-ins, and conversations that feel human.
+            </p>
+            <ul class="spotlight-card__list">
+              <li>Adaptive daily plans that learn your energy patterns</li>
+              <li>Voice-guided audio sessions with natural TTS</li>
+              <li>Long-term memory that actually remembers who you are</li>
+              <li>Smart replanning when life changes mid-day</li>
+            </ul>
+          </div>
+          <div class="spotlight-card__visual">
+            <div class="spotlight-orb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">A Ritual That Fits Your Life</h2>
+        <p class="section-header__subtitle">
+          Three simple steps to start each day with intention — no willpower required.
+        </p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">01</div>
+          <div class="step__content">
+            <h3 class="step__title">Morning Check-In</h3>
+            <p class="step__desc">
+              Tell Tertio how you slept, your energy level, and what's on your
+              mind. Takes 60 seconds — feels like texting a friend.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div class="step__content">
+            <h3 class="step__title">Get Your Daily Plan</h3>
+            <p class="step__desc">
+              AI generates three personalized tasks — one for body, mind, and
+              spirit — timed perfectly around your schedule and chronotype.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div class="step__content">
+            <h3 class="step__title">Complete & Reflect</h3>
+            <p class="step__desc">
+              Follow guided audio sessions, mark tasks complete, and reflect
+              with Tertio. Every day builds on the last — your growth, remembered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section class="waitlist" id="waitlist">
+    <div class="container">
+      <div class="waitlist__card">
+        <div class="waitlist__content">
+          <h2 class="waitlist__title">Join the Waitlist</h2>
+          <p class="waitlist__desc">
+            Tertio is in closed beta. Get early access and be the first to
+            experience a new kind of wellness companion.
+          </p>
+          <a
+            href="https://forms.gle/uquiD6fFN8mBhA578"
+            class="btn btn--primary waitlist__btn"
+            id="waitlist-link"
+            target="_blank"
+            rel="noopener"
+          >
+            Join the Waitlist
+          </a>
+          <p class="waitlist__footnote">
+            No spam. Just one email when we're ready for you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">✦ Tertio</span>
+          <p class="footer__tagline">Your AI co-pilot for mind, body & spirit.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4 class="footer__col-title">App</h4>
+            <a href="#" class="footer__link">Waitlist</a>
+            <a href="#features" class="footer__link">Features</a>
+            <a href="#how-it-works" class="footer__link">How It Works</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Connect</h4>
+            <a href="#" class="footer__link">Twitter</a>
+            <a href="#" class="footer__link">Instagram</a>
+            <a href="#" class="footer__link">Contact</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Legal</h4>
+            <a href="privacy.html" class="footer__link">Privacy Policy</a>
+            <a href="privacy.html" class="footer__link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Tertio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
