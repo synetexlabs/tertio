@@ -594,28 +594,71 @@
       background: var(--ivory);
       padding: 64px 5vw;
     }
-    .pricing-inner { max-width: 800px; margin: 0 auto; }
+    .pricing-inner { max-width: 1000px; margin: 0 auto; }
     .pricing-cards {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
       margin-top: 40px;
+      align-items: start;
     }
     .pricing-card {
       background: var(--ivory-mid);
       border-radius: 24px;
       padding: 28px;
       box-shadow: 6px 6px 14px var(--neu-shadow-dark), -6px -6px 14px var(--neu-shadow-light);
+      position: relative;
     }
     .pricing-card.featured {
       background: var(--ink);
       box-shadow: 0 12px 40px rgba(44,34,24,0.25);
+      transform: scale(1.03);
     }
     .pricing-card.featured * { color: rgba(255,249,240,0.9) !important; }
     .pricing-card.featured .pricing-check { background: var(--coral) !important; }
+    .pricing-best-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--coral), #F4C48A);
+      color: white !important;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .pricing-trial-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(120,183,167,0.15);
+      color: #2D8070;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(120,183,167,0.3);
+    }
+    .pricing-trial-badge.light {
+      background: rgba(120,183,167,0.12);
+      color: var(--sage-light) !important;
+      border-color: rgba(120,183,167,0.25);
+    }
+    .pricing-save-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--coral-dark);
+      margin-left: 6px;
+    }
     .pricing-tier { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 8px; }
-    .pricing-price { font-family: var(--display-font); font-size: 2.4rem; color: var(--ink); line-height: 1; margin-bottom: 4px; }
+    .pricing-price { font-family: var(--display-font); font-size: 2.2rem; color: var(--ink); line-height: 1; margin-bottom: 4px; }
     .pricing-price span { font-size: 1rem; font-family: var(--body-font); color: var(--ink-muted); }
+    .pricing-billed { font-size: 0.78rem; color: var(--ink-muted); margin-bottom: 4px; }
     .pricing-desc { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 20px; font-weight: 300; }
     .pricing-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .pricing-features li { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-mid); }
@@ -805,6 +848,7 @@
       .aanya-inner { grid-template-columns: 1fr; }
       .proof-grid { grid-template-columns: 1fr; }
       .pricing-cards { grid-template-columns: 1fr; }
+      .pricing-card.featured { transform: scale(1); }
       .nav-links { display: none; }
       .nav-hamburger { display: block; }
       .waitlist-form { flex-direction: column; border-radius: 20px; }
@@ -1097,12 +1141,15 @@
       <div class="reveal" style="text-align: center;">
         <span class="section-eyebrow">Pricing</span>
         <h2 class="section-title">Start free. Go deeper<br />when you're ready.</h2>
+        <p class="section-sub" style="margin: 12px auto 0; text-align: center;">No credit card required to start. Cancel anytime.</p>
       </div>
       <div class="pricing-cards">
+
+        <!-- FREE -->
         <div class="pricing-card reveal reveal-delay-1">
           <div class="pricing-tier">Free</div>
           <div class="pricing-price">$0 <span>/ forever</span></div>
-          <div class="pricing-desc">Everything you need to start a daily ritual.</div>
+          <div class="pricing-desc">Everything you need to build a daily ritual.</div>
           <ul class="pricing-features">
             <li><span class="pricing-check">✓</span> Daily AI-generated 3-task plan</li>
             <li><span class="pricing-check">✓</span> Morning check-in</li>
@@ -1111,12 +1158,36 @@
             <li><span class="pricing-x">–</span> <span style="color: var(--ink-muted);">Guided audio sessions</span></li>
             <li><span class="pricing-x">–</span> <span style="color: var(--ink-muted);">Unlimited chat</span></li>
             <li><span class="pricing-x">–</span> <span style="color: var(--ink-muted);">Journey insights</span></li>
+            <li><span class="pricing-x">–</span> <span style="color: var(--ink-muted);">Long-term memory</span></li>
           </ul>
         </div>
+
+        <!-- PRO ANNUAL — FEATURED -->
         <div class="pricing-card featured reveal reveal-delay-2">
-          <div class="pricing-tier" style="color: var(--coral) !important;">Pro</div>
+          <div class="pricing-best-badge">✦ Best value</div>
+          <div class="pricing-tier" style="color: var(--coral) !important; margin-top: 8px;">Pro Annual</div>
+          <div class="pricing-trial-badge light">✓ 7-day free trial</div>
+          <div class="pricing-price">$29.99 <span>/ year</span></div>
+          <div class="pricing-billed" style="color: rgba(255,249,240,0.45) !important;">Just $2.50/month — save 50% vs monthly</div>
+          <div class="pricing-desc" style="margin-top: 10px;">The full Tertio experience at half the price.</div>
+          <ul class="pricing-features">
+            <li><span class="pricing-check">✓</span> Everything in Free</li>
+            <li><span class="pricing-check">✓</span> Guided audio for every task</li>
+            <li><span class="pricing-check">✓</span> Unlimited chat with Aanya</li>
+            <li><span class="pricing-check">✓</span> Journey insights & progress rings</li>
+            <li><span class="pricing-check">✓</span> Advanced mid-day replanning</li>
+            <li><span class="pricing-check">✓</span> Long-term memory (Aanya remembers)</li>
+            <li><span class="pricing-check">✓</span> 7-day free trial included</li>
+          </ul>
+        </div>
+
+        <!-- PRO MONTHLY -->
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-tier">Pro Monthly</div>
+          <div class="pricing-trial-badge">✓ 7-day free trial</div>
           <div class="pricing-price">$4.99 <span>/ month</span></div>
-          <div class="pricing-desc">The full Tertio experience — Aanya at her best.</div>
+          <div class="pricing-billed">Billed monthly · cancel anytime</div>
+          <div class="pricing-desc" style="margin-top: 10px;">Full Pro access with maximum flexibility.</div>
           <ul class="pricing-features">
             <li><span class="pricing-check">✓</span> Everything in Free</li>
             <li><span class="pricing-check">✓</span> Guided audio for every task</li>
@@ -1126,6 +1197,7 @@
             <li><span class="pricing-check">✓</span> Long-term memory (Aanya remembers)</li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
@@ -1182,32 +1254,66 @@
     </div>
   </footer>
 
-  <script>
+   <script>
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
     reveals.forEach(el => io.observe(el));
-
-    // Waitlist form
-    function handleWaitlist(e) {
+ 
+    // Waitlist form — Formspree integration
+    // STEP: Replace YOUR_FORM_ID below with your actual Formspree form ID
+    // Get it free at formspree.io → New Form → copy the ID from the endpoint URL
+    const FORMSPREE_ID = 'xrevjgjq';
+ 
+    async function handleWaitlist(e) {
       e.preventDefault();
+ 
       const form = document.getElementById('waitlist-form');
       const success = document.getElementById('waitlist-success');
-      const email = form.querySelector('input[type="email"]').value;
-
-      // Replace this URL with your actual Formspree/Brevo endpoint
-      // For now we just show success UI
-      form.style.display = 'none';
-      success.style.display = 'block';
-
-      // To wire up: replace the fetch below with your actual endpoint
-      // fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: JSON.stringify({ email }), headers: { 'Content-Type': 'application/json' } });
-
-      console.log('Waitlist signup:', email);
+      const error = document.getElementById('waitlist-error');
+      const btn = form.querySelector('button[type="submit"]');
+      const input = form.querySelector('input[type="email"]');
+      const email = input.value.trim();
+ 
+      // Guard: if Formspree ID not set yet, warn in console but don't break UX
+      if (FORMSPREE_ID === 'xrevjgjq') {
+        console.warn('Tertio: Formspree ID not configured. Set FORMSPREE_ID in the script.');
+        form.style.display = 'none';
+        success.style.display = 'block';
+        return;
+      }
+ 
+      // Loading state
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      error.style.display = 'none';
+ 
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ email, source: 'tertio-landing-waitlist' })
+        });
+ 
+        if (res.ok) {
+          // Success
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          const data = await res.json();
+          throw new Error(data?.errors?.[0]?.message || 'Submission failed');
+        }
+      } catch (err) {
+        // Error state — show message, re-enable form
+        btn.disabled = false;
+        btn.textContent = 'Notify me';
+        error.style.display = 'block';
+        console.error('Waitlist error:', err);
+      }
     }
-
+ 
     // Mobile nav close on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
@@ -1215,6 +1321,5 @@
       });
     });
   </script>
-
 </body>
 </html>
